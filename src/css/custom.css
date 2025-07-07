@@ -43,18 +43,6 @@
   --docusaurus-highlighted-code-line-bg: rgba(211, 166, 37, 0.1);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme="dark"] {
-  --ifm-color-primary: var(--hp-gryffindor-red);
-  --ifm-color-primary-dark: #5a0606;
-  --ifm-color-primary-darker: #3d0404;
-  --ifm-color-primary-darkest: #2a0202;
-  --ifm-color-primary-light: #a83232;
-  --ifm-color-primary-lighter: #c94c4c;
-  --ifm-color-primary-lightest: #e57373;
-  --docusaurus-highlighted-code-line-bg: rgba(127, 9, 9, 0.3);
-}
-
 body,
 p,
 .hero__subtitle,
@@ -66,17 +54,6 @@ p,
 .main-wrapper {
   font-family: "TomNR", "Segoe UI", Arial, sans-serif !important;
   color: #2a0202;
-}
-[data-theme="dark"] body,
-[data-theme="dark"] p,
-[data-theme="dark"] .hero__subtitle,
-[data-theme="dark"] .button,
-[data-theme="dark"] .navbar,
-[data-theme="dark"] .footer,
-[data-theme="dark"] .docMainContainer,
-[data-theme="dark"] .markdown,
-[data-theme="dark"] .main-wrapper {
-  color: #fff8e1;
 }
 
 /* Magical Title Styles */
@@ -93,18 +70,6 @@ h6 {
   text-shadow: 2px 2px 8px #fff, 0 0 12px var(--hp-hufflepuff-yellow),
     0 0 2px #000;
   filter: drop-shadow(0 2px 2px #b88a1a);
-}
-[data-theme="dark"] h1,
-[data-theme="dark"] .hero__title,
-[data-theme="dark"] h2,
-[data-theme="dark"] h3,
-[data-theme="dark"] h4,
-[data-theme="dark"] h5,
-[data-theme="dark"] h6 {
-  color: var(--hp-gryffindor-gold);
-  text-shadow: 2px 2px 8px #000, 0 0 12px var(--hp-gryffindor-red),
-    0 0 2px #fff;
-  filter: drop-shadow(0 2px 2px #7f0909);
 }
 
 /* Magical Button Styles */
@@ -162,4 +127,39 @@ h6 {
 h1,
 .hero__title {
   animation: sparkle 2s infinite alternate;
+  /* font-size: 8rem; */
+}
+
+.hero__title {
+  font-size: 8rem;
+}
+
+/* Harry Potter themed pagination */
+.pagination-nav__link {
+  background: var(--hp-hufflepuff-yellow) !important;
+  border: 2px solid var(--hp-gryffindor-gold) !important;
+  color: var(--hp-gryffindor-red) !important;
+  font-family: "TomNR", "Segoe UI", Arial, sans-serif !important;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 2px 8px 0 rgba(211, 166, 37, 0.1);
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.pagination-nav__link:hover {
+  background: var(--hp-gryffindor-gold) !important;
+  color: var(--hp-hufflepuff-black) !important;
+  border: 2px solid var(--hp-gryffindor-red) !important;
+}
+.pagination-nav__label {
+  color: var(--hp-gryffindor-red) !important;
+  font-family: "TomNR", "Segoe UI", Arial, sans-serif !important;
+  font-weight: bold;
+}
+
+.footer {
+  background: var(--hp-hufflepuff-yellow) !important;
+  color: var(--hp-gryffindor-red) !important;
+  font-family: "TomNR", "Segoe UI", Arial, sans-serif !important;
+  font-size: 1.2rem;
+  border-top: 4px solid var(--hp-gryffindor-gold);
 }
