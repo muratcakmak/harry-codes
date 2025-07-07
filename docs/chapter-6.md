@@ -1,4 +1,6 @@
-# Chapter 6: Sorting Hat Logic (if/else if Trees)
+# Chapter 6: Sorting Hat Logic
+
+## if/else if Trees
 
 The Sorting Hat at Hogwarts considers many factors to decide which house suits a student best. In code, when we have multiple conditions to check, we use an `if/else if/else` chain, which is like a decision tree. The program will test each condition in order until one is true, then choose that path and ignore the rest.
 

@@ -1,4 +1,6 @@
-# Chapter 9: The Forbidden If (Avoiding Over-Nesting and Using Guards)
+# Chapter 9: The Forbidden If
+
+## Avoiding Over-Nesting and Using Guards
 
 Just as there are forbidden curses, there are some coding habits that, while not unforgivable, can lead to trouble. One such habit is over-nesting your `if` statements or getting lost in a tangle of conditions. In this chapter, we'll learn how to keep our conditions clean and understandable. We'll also introduce the concept of a guard clause, which is a neat way to handle special cases upfront and avoid deep nesting.
 

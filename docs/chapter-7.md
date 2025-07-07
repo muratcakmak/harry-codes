@@ -1,4 +1,6 @@
-# Chapter 7: Charms That Repeat (for Loops and Repetition)
+# Chapter 7: Charms That Repeat
+
+## for Loops and Repetition
 
 Have you ever needed to repeat a magic spell multiple times? Perhaps you want to practice wand movements 10 times, or you have a stack of 100 potion bottles to fill. Rather than writing the same line of code over and over, we use loops to make the computer do the repetition for us. The `for` loop is like a Repetition Charm in our code.
 

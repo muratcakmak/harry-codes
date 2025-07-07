@@ -1,4 +1,6 @@
-# Chapter 1: Let the Magic Begin (Introducing Variables and console.log)
+# Chapter 1: Let the Magic Begin
+
+## Introducing Variables and console.log
 
 Welcome to your very first coding lesson at Codewarts! In this chapter, we'll start with the simplest of magical coding tools: variables and the `console.log` spell. Think of a variable as a magical chest where you can store anything – a number, a word, or any piece of data. And `console.log` is a handy incantation that lets us see what's inside those chests (by printing it out to the screen).
 

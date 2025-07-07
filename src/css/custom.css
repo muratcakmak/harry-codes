@@ -4,6 +4,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "TomNR";
+  src: url("/fonts/tomnr.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 /**
  * Any CSS included here will be global. The classic template
@@ -49,6 +55,30 @@
   --docusaurus-highlighted-code-line-bg: rgba(127, 9, 9, 0.3);
 }
 
+body,
+p,
+.hero__subtitle,
+.button,
+.navbar,
+.footer,
+.docMainContainer,
+.markdown,
+.main-wrapper {
+  font-family: "TomNR", "Segoe UI", Arial, sans-serif !important;
+  color: #2a0202;
+}
+[data-theme="dark"] body,
+[data-theme="dark"] p,
+[data-theme="dark"] .hero__subtitle,
+[data-theme="dark"] .button,
+[data-theme="dark"] .navbar,
+[data-theme="dark"] .footer,
+[data-theme="dark"] .docMainContainer,
+[data-theme="dark"] .markdown,
+[data-theme="dark"] .main-wrapper {
+  color: #fff8e1;
+}
+
 /* Magical Title Styles */
 h1,
 .hero__title,
@@ -60,10 +90,10 @@ h6 {
   font-family: "HarryPotter", serif !important;
   letter-spacing: 0.04em;
   color: var(--hp-gryffindor-red);
-  text-shadow: 2px 2px 0 var(--hp-gryffindor-gold),
-    0 0 8px var(--hp-hufflepuff-yellow);
+  text-shadow: 2px 2px 8px #fff, 0 0 12px var(--hp-hufflepuff-yellow),
+    0 0 2px #000;
+  filter: drop-shadow(0 2px 2px #b88a1a);
 }
-
 [data-theme="dark"] h1,
 [data-theme="dark"] .hero__title,
 [data-theme="dark"] h2,
@@ -72,8 +102,9 @@ h6 {
 [data-theme="dark"] h5,
 [data-theme="dark"] h6 {
   color: var(--hp-gryffindor-gold);
-  text-shadow: 2px 2px 0 var(--hp-gryffindor-red),
-    0 0 8px var(--hp-hufflepuff-yellow);
+  text-shadow: 2px 2px 8px #000, 0 0 12px var(--hp-gryffindor-red),
+    0 0 2px #fff;
+  filter: drop-shadow(0 2px 2px #7f0909);
 }
 
 /* Magical Button Styles */
@@ -88,13 +119,20 @@ h6 {
   );
   color: var(--hp-gryffindor-red) !important;
   font-weight: bold;
+  font-family: "TomNR", "Segoe UI", Arial, sans-serif !important;
+  font-size: 2rem;
   box-shadow: 0 2px 8px 0 rgba(211, 166, 37, 0.2);
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
 }
 .button--primary:hover,
 .button--secondary:hover {
   transform: scale(1.05) rotate(-2deg);
   box-shadow: 0 4px 16px 0 rgba(127, 9, 9, 0.3);
+  background: linear-gradient(
+    90deg,
+    var(--hp-hufflepuff-yellow) 0%,
+    var(--hp-gryffindor-gold) 100%
+  );
 }
 
 /* Magical background for hero */
@@ -113,12 +151,12 @@ h6 {
 @keyframes sparkle {
   0%,
   100% {
-    text-shadow: 2px 2px 0 var(--hp-gryffindor-gold),
-      0 0 8px var(--hp-hufflepuff-yellow);
+    text-shadow: 2px 2px 8px #fff, 0 0 12px var(--hp-hufflepuff-yellow),
+      0 0 2px #000;
   }
   50% {
-    text-shadow: 2px 2px 8px var(--hp-hufflepuff-yellow),
-      0 0 16px var(--hp-gryffindor-gold);
+    text-shadow: 2px 2px 16px var(--hp-hufflepuff-yellow),
+      0 0 24px var(--hp-gryffindor-gold);
   }
 }
 h1,

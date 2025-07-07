@@ -1,5 +1,7 @@
 # Chapter 14: Console-Based Adventure – Escape from Azkaban
 
+## Escape from Azkaban
+
 Get ready to write your own mini choose-your-own-adventure game! In this project, we'll create a text-based interactive story called "Escape from Azkaban." The player (you) will make choices, and our code will determine what happens next based on those choices. This will heavily use `if/else` logic to branch the story.
 
 ## 🎮 Setting the Scene

@@ -1,4 +1,6 @@
-# Chapter 8: Time Turners (Looping Through Arrays)
+# Chapter 8: Time Turners
+
+## Looping Through Arrays
 
 In the wizarding world, a Time Turner lets Hermione revisit hours in the day to attend multiple classes. In programming, loops can let us revisit each element in an array as if we had a time turner to iterate through all items one by one. This chapter will show how to combine loops with arrays to perform operations on each element easily.
 

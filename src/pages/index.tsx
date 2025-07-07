@@ -16,11 +16,20 @@ function HomepageHeader() {
         <Heading as="h1" className="hero__title">
           Harry Codes
         </Heading>
-        <p className="hero__subtitle">Magical Coding for Wizards</p>
+        <p
+          className="hero__subtitle"
+          style={{
+            fontSize: "2rem",
+            fontWeight: 600,
+            margin: "2rem 0",
+          }}
+        >
+          Magical Coding for Wizards
+        </p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro"
+            to="/docs/preface"
           >
             Start the Book of Spells
           </Link>
@@ -37,9 +46,6 @@ export default function Home(): ReactNode {
       description="A magical journey into coding, inspired by Harry Potter!"
     >
       <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
     </Layout>
   );
 }

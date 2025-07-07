@@ -1,4 +1,6 @@
-# Chapter 4: Spellbooks (Arrays for Collections)
+# Chapter 4: Spellbooks
+
+## Arrays for Collections
 
 You've learned to store single pieces of data in variables. But what if you have many items to keep track of? Enter arrays, the magical lists that can hold multiple values in a single variable. Think of an array as a spellbook – a collection of spells (or any items) kept together for easy use.
 
@@ -85,43 +87,4 @@ However, be careful: if you jump to an index that's not immediately after the la
 
 ## 🔄 Changing and Retrieving Items
 
-We saw how to change an item by assigning to its index (like updating Lumos to Lumos Maxima). Retrieving is just reading `array[index]`. If you use an index that doesn't exist (like `spells[10]` when your array has only 5 items), you'll get `undefined` – which is JavaScript's way of saying "nothing's here."
-
-Example: Let's make an array of magical creatures and play with it:
-
-```js
-let creatures = ["Phoenix", "Dragon", "Unicorn"];
-console.log(creatures[0]); // Output: Phoenix
-creatures[1] = "Basilisk"; // Oops, replace Dragon with Basilisk
-console.log(creatures); // Output: ["Phoenix", "Basilisk", "Unicorn"]
-console.log(creatures.length); // Output: 3
-creatures.push("Hippogriff");
-console.log(creatures); // Output: ["Phoenix", "Basilisk", "Unicorn", "Hippogriff"]
-console.log(creatures[3]); // Output: Hippogriff
-```
-
-## 🌟 Looping Through Arrays (Sneak Peek)
-
-Often you'll want to do something with each item in an array (like print all spells in the spellbook). While we haven't covered loops in detail yet (that's coming in the next part), here's a sneak peek:
-
-```js
-for (let i = 0; i < spells.length; i++) {
-  console.log("Spell " + i + ": " + spells[i]);
-}
-```
-
-This will go through each index `i` from 0 up to `spells.length - 1` and print each spell with its index. Don't worry if this `for` loop syntax is new; we'll decode it in the next chapters. Just know arrays and loops are like best friends – they work together to let you easily manipulate collections of data.
-
-## 🧮 Try It: Create Your Own Array
-
-Try it yourself:
-
-- Create an array `myFavorites` that contains 3 or 4 of your favorite things (could be favorite spells, characters, candies, anything). e.g. `let myFavorites = ["Chocolate Frogs", "Quidditch", "Hermione", "Invisibility Cloak"];`
-- Use `console.log` to print the first item and the last item in the array. (Hint: if the array has 4 items, the last index is 3 since we start counting at 0.)
-- Change the second item to something else by assigning to its index.
-- Add a new favorite item to the end using `.push()`.
-- Print the entire array to see the changes.
-
-By using arrays, you can handle any number of items without creating a new variable for each one. Imagine keeping track of every student at Hogwarts or every card in a Chocolate Frog card collection – arrays make that feasible!
-
-Great! You now have a spellbook of your own (in code). In the next chapter, we'll learn how to choose different paths in our code using if statements (just like making decisions in an adventure). This will let our programs react to conditions and make choices, adding more magic and flexibility to our code.
+We saw how to change an item by assigning to its index (like updating Lumos to Lumos Maxima). Retrieving is just reading `

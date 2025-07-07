@@ -1,5 +1,7 @@
 # Chapter 15: Final Challenge – Wizarding Tournament Scoreboard
 
+## Wizarding Tournament Scoreboard
+
 Welcome to the Wizarding Tournament! In this final challenge, we'll create a scoreboard system for a magical tournament. This project will incorporate arrays, loops, conditionals, and functions all together. Think of it like combining everything to simulate a competition.
 
 ## 🏆 Tournament Concept

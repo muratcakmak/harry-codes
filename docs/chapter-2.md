@@ -1,4 +1,6 @@
-# Chapter 2: Casting Your First Spell (Functions with No Parameters)
+# Chapter 2: Casting Your First Spell
+
+## Functions with No Parameters
 
 Variables are like magical ingredients, but functions are the spells themselves. A function is a reusable piece of code that performs a specific task. You can think of it as a spell in a spellbook: you say the magic words (call the function) and boom! something happens.
 

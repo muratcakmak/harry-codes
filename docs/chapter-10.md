@@ -1,5 +1,7 @@
 # Chapter 10: Mini Project – Dueling Club Tracker
 
+## Dueling Club Tracker
+
 It's time to put together the skills from Part 2 (and Part 1) in a fun mini project! In this project, we'll create a simple Dueling Club Tracker. The idea is to track the outcomes of multiple magical duels and tally the wins for each participant. This will involve arrays (to store duel results), loops (to iterate through those results), and conditionals (to count wins per person).
 
 ## 🏆 Project Overview

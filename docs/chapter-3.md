@@ -1,4 +1,6 @@
-# Chapter 3: Spells with Ingredients (Functions with Parameters and Return Values)
+# Chapter 3: Spells with Ingredients
+
+## Functions with Parameters and Return Values
 
 Now that you can cast basic spells (functions), it's time to make them more powerful by adding ingredients. In coding terms, these ingredients are called parameters. They allow you to pass information into your functions so the spell can do something with that info. We'll also learn about returning values, which is like a spell handing you back a result after it runs.
 

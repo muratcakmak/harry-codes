@@ -1,4 +1,6 @@
-# Chapter 13: Create Your Own Wizard Card (Displaying Character Info)
+# Chapter 13: Create Your Own Wizard Card
+
+## Displaying Character Info
 
 Just like the famous Chocolate Frog cards that have profiles of witches and wizards, we're going to create a digital Wizard Card using JavaScript. This card will display information about a character, such as name, house, and other traits, formatted as a small profile in the console.
 

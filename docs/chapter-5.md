@@ -1,4 +1,6 @@
-# Chapter 5: Choose Your Path (if, else and Simple Conditionals)
+# Chapter 5: Choose Your Path
+
+## if, else and Simple Conditionals
 
 Every great adventure story involves choices – do you take the left path or the right path? In coding, conditionals like `if` and `else` allow our program to make decisions and choose different paths of execution. It's like giving your code a brain to decide what to do based on certain conditions.
 
