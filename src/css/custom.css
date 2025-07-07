@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "HarryPotter";
+  src: url("/fonts/HarryPotter.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -6,25 +13,115 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* Gryffindor Scarlet & Gold */
+  --hp-gryffindor-red: #7f0909;
+  --hp-gryffindor-gold: #d3a625;
+  /* Slytherin Green & Silver */
+  --hp-slytherin-green: #1a472a;
+  --hp-slytherin-silver: #aaaaaa;
+  /* Ravenclaw Blue & Bronze */
+  --hp-ravenclaw-blue: #0e1a40;
+  --hp-ravenclaw-bronze: #946b2d;
+  /* Hufflepuff Yellow & Black */
+  --hp-hufflepuff-yellow: #f0c75e;
+  --hp-hufflepuff-black: #372e29;
+  /* General magical colors */
+  --ifm-color-primary: var(--hp-gryffindor-gold);
+  --ifm-color-primary-dark: #b88a1a;
+  --ifm-color-primary-darker: #a67c1a;
+  --ifm-color-primary-darkest: #7c5e13;
+  --ifm-color-primary-light: #e6c95c;
+  --ifm-color-primary-lighter: #f7e7b3;
+  --ifm-color-primary-lightest: #fff8e1;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(211, 166, 37, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+[data-theme="dark"] {
+  --ifm-color-primary: var(--hp-gryffindor-red);
+  --ifm-color-primary-dark: #5a0606;
+  --ifm-color-primary-darker: #3d0404;
+  --ifm-color-primary-darkest: #2a0202;
+  --ifm-color-primary-light: #a83232;
+  --ifm-color-primary-lighter: #c94c4c;
+  --ifm-color-primary-lightest: #e57373;
+  --docusaurus-highlighted-code-line-bg: rgba(127, 9, 9, 0.3);
+}
+
+/* Magical Title Styles */
+h1,
+.hero__title,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "HarryPotter", serif !important;
+  letter-spacing: 0.04em;
+  color: var(--hp-gryffindor-red);
+  text-shadow: 2px 2px 0 var(--hp-gryffindor-gold),
+    0 0 8px var(--hp-hufflepuff-yellow);
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] .hero__title,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
+  color: var(--hp-gryffindor-gold);
+  text-shadow: 2px 2px 0 var(--hp-gryffindor-red),
+    0 0 8px var(--hp-hufflepuff-yellow);
+}
+
+/* Magical Button Styles */
+.button--primary,
+.button--secondary {
+  border-radius: 8px;
+  border: 2px solid var(--hp-gryffindor-gold);
+  background: linear-gradient(
+    90deg,
+    var(--hp-gryffindor-gold) 0%,
+    var(--hp-hufflepuff-yellow) 100%
+  );
+  color: var(--hp-gryffindor-red) !important;
+  font-weight: bold;
+  box-shadow: 0 2px 8px 0 rgba(211, 166, 37, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.button--primary:hover,
+.button--secondary:hover {
+  transform: scale(1.05) rotate(-2deg);
+  box-shadow: 0 4px 16px 0 rgba(127, 9, 9, 0.3);
+}
+
+/* Magical background for hero */
+.hero.hero--primary {
+  background: linear-gradient(
+    135deg,
+    var(--hp-gryffindor-gold) 0%,
+    var(--hp-hufflepuff-yellow) 100%,
+    var(--hp-gryffindor-red) 100%
+  );
+  border-bottom: 4px solid var(--hp-gryffindor-red);
+  box-shadow: 0 8px 32px 0 rgba(211, 166, 37, 0.15);
+}
+
+/* Add a subtle sparkle effect to headings */
+@keyframes sparkle {
+  0%,
+  100% {
+    text-shadow: 2px 2px 0 var(--hp-gryffindor-gold),
+      0 0 8px var(--hp-hufflepuff-yellow);
+  }
+  50% {
+    text-shadow: 2px 2px 8px var(--hp-hufflepuff-yellow),
+      0 0 16px var(--hp-gryffindor-gold);
+  }
+}
+h1,
+.hero__title {
+  animation: sparkle 2s infinite alternate;
 }
