@@ -139,7 +139,7 @@ This approach uses the function to avoid rewriting the logging code for each cha
 ## 🧙‍♂️ Customize Your Card
 
 - Try adding another field to the card, like Wand: "Vine wood, Dragon heartstring core" or Patronus.
-- If you know about template literals (introduced in ES6), you could use them for nicer formatting: `console.log(`Name: ${wizardName}`);` which is another way to embed variables in strings. But if that's new, don't worry, it's just syntactic sugar over concatenation.
+- If you know about template literals (introduced in ES6), you could use them for nicer formatting: `console.log(`Name: ${`wizardName`}`);` which is another way to embed variables in strings. But if that's new, don't worry, it's just syntactic sugar over concatenation.
 - Consider color coding or special symbols. The console doesn't easily support colors without special libraries, but you can use emojis or symbols to decorate. E.g., prefix Gryffindor with a lion emoji 🦁, etc., purely for fun effect: `console.log("House: " + house + (house === "Gryffindor" ? " 🦁" : ""));` (This adds a lion if the house is Gryffindor.)
 
 This wizard card project may seem simple, but it mirrors how you might format data for output in bigger programs (like generating an HTML profile on a webpage or formatting data in a report). It reinforces using variables and string concatenation to present information clearly.
